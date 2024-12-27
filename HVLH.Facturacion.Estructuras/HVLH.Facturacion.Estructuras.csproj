@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AFE98A4-D772-4671-BA0D-EF70A12859C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HVLH.Facturacion.Estructuras</RootNamespace>
+    <AssemblyName>HVLH.Facturacion.Estructuras</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentesAgregadoComunes\AccountingSupplierParty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AdditionalDocumentReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AdditionalItemProperty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AddressLine.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AgentParty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AllowanceCharge.cs" />
+    <Compile Include="ComponentesAgregadoComunes\AlternativeConditionPrice.cs" />
+    <Compile Include="ComponentesAgregadoComunes\BillingReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\CarrierParty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\CommodityClassification.cs" />
+    <Compile Include="ComponentesAgregadoComunes\CompanyID.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Country.cs" />
+    <Compile Include="ComponentesAgregadoComunes\DespatchLine.cs" />
+    <Compile Include="ComponentesAgregadoComunes\DespatchLineItem.cs" />
+    <Compile Include="ComponentesAgregadoComunes\DespatchSupplierParty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\DigitalSignatureAttachment.cs" />
+    <Compile Include="ComponentesAgregadoComunes\DiscrepancyResponse.cs" />
+    <Compile Include="ComponentesAgregadoComunes\ExchangeRate.cs" />
+    <Compile Include="ComponentesAgregadoComunes\ExternalReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\InvoiceDocumentReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\InvoiceLine.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Item.cs" />
+    <Compile Include="ComponentesAgregadoComunes\LegalMonetaryTotal.cs" />
+    <Compile Include="ComponentesAgregadoComunes\OrderReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Party.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PartyIdentification.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PartyLegalEntity.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PartyName.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PartyTaxScheme.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PayeeFinancialAccount.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Payment.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PaymentMeans.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PaymentTerms.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PostalAddress.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Price.cs" />
+    <Compile Include="ComponentesAgregadoComunes\PricingReference.cs" />
+    <Compile Include="ComponentesAgregadoComunes\RegistrationAddress.cs" />
+    <Compile Include="ComponentesAgregadoComunes\SellersItemIdentification.cs" />
+    <Compile Include="ComponentesAgregadoComunes\Shipment.cs" />
+    <Compile Include="ComponentesAgregadoComunes\ShipmentStage.cs" />
+    <Compile Include="ComponentesAgregadoComunes\SignatoryParty.cs" />
+    <Compile Include="ComponentesAgregadoComunes\SignatureCac.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TaxCategory.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TaxScheme.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TaxSubtotal.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TaxTotal.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TransportEquipment.cs" />
+    <Compile Include="ComponentesAgregadoComunes\TransportHandlingUnit.cs" />
+    <Compile Include="ComponentesAgregadoSunat\AdditionalInformation.cs" />
+    <Compile Include="ComponentesAgregadoSunat\AdditionalMonetaryTotal.cs" />
+    <Compile Include="ComponentesAgregadoSunat\AdditionalProperty.cs" />
+    <Compile Include="ComponentesAgregadoSunat\BillingPayment.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatCosts.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatEmbededDespatchAdvice.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatRetentionDocumentReference.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatRetentionInformation.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatRoadTransport.cs" />
+    <Compile Include="ComponentesAgregadoSunat\SunatTransaction.cs" />
+    <Compile Include="ComponentesAgregadoSunat\VoidedDocumentsLine.cs" />
+    <Compile Include="ComponentesBasicosComunes\CustomerAssignedAccountId.cs" />
+    <Compile Include="ComponentesBasicosComunes\InvoicedQuantity.cs" />
+    <Compile Include="ComponentesBasicosComunes\InvoiceTypeCode.cs" />
+    <Compile Include="ComponentesBasicosComunes\LoadingPortLocation.cs" />
+    <Compile Include="ComponentesBasicosComunes\Note.cs" />
+    <Compile Include="ComponentesBasicosComunes\OrderTypeCode.cs" />
+    <Compile Include="ComponentesBasicosComunes\PartyIdentificationId.cs" />
+    <Compile Include="ComponentesBasicosComunes\PayableAmount.cs" />
+    <Compile Include="ComponentesBasicosComunes\ProfileID.cs" />
+    <Compile Include="ComponentesBasicosComunes\TransitPeriod.cs" />
+    <Compile Include="ComponentesExtensionComunes\ExtensionContent.cs" />
+    <Compile Include="ComponentesExtensionComunes\UblExtension.cs" />
+    <Compile Include="ComponentesExtensionComunes\UblExtensions.cs" />
+    <Compile Include="EstandarUbl2\_1\CreditNote.cs" />
+    <Compile Include="EstandarUbl2\_1\DebitNote.cs" />
+    <Compile Include="EstandarUbl2\_1\DespatchAdvice.cs" />
+    <Compile Include="EstandarUbl2\_1\Invoice.cs" />
+    <Compile Include="EstandarUbl\CreditNote.cs" />
+    <Compile Include="EstandarUbl\DebitNote.cs" />
+    <Compile Include="EstandarUbl\DespatchAdvice.cs" />
+    <Compile Include="EstandarUbl\Invoice.cs" />
+    <Compile Include="EstandarUbl\Perception.cs" />
+    <Compile Include="EstandarUbl\Retention.cs" />
+    <Compile Include="EstandarUbl\SummaryDocuments.cs" />
+    <Compile Include="EstandarUbl\VoidedDocuments.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HVLH.Facturacion.Comun\HVLH.Facturacion.Comun.csproj">
+      <Project>{8629E737-7B0D-4A6C-B8AA-48185281FC53}</Project>
+      <Name>HVLH.Facturacion.Comun</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
